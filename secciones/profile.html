@@ -115,7 +115,7 @@
                 <strong>User</strong>
               </a>
               <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                <li><a class="dropdown-item" href="../secciones/profile.html">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Sign out</a></li>
               </ul>
@@ -127,35 +127,60 @@
 
     <!-- mapa principal -->
     <main class="mainArea">
-        <!-- AREAL LIBRE PARA DASHBOAR -->
-        <div class="card" style="width: 18rem;">
-            <div class="card-header">
-              Dispositivos Smart Cell
+        <!-- AREAL LIBRE PARA FORM -->
+
+        <form class="row g-3">
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">plaza 1</li>
-              <li class="list-group-item">plaza 1</li>
-              <li class="list-group-item">plaza 1m</li>
-            </ul>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <div class="card-header">
-              Dispositivos SamrtMeter
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">GAs 1</li>
-              <li class="list-group-item">Gas 2</li>
-              <li class="list-group-item">Agua 1</li>
-            </ul>
-          </div>
-          
+            <div class="col-md-6"></div>
+            
 
-
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Address" aria-label="Address">
+            </div>
+                   
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="City" aria-label="City">
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="State" aria-label="State">
+            </div>
+            
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Update profile 
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Change Password  
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+          </form>  
+      
     </main>
     <!-- width="800" height="550" tamaño del iframe -->
-    
-        <!-- inicio footer -->
+
+    <!-- inicio footer -->
     <footer class="piePagina">
 
         <a class="socialIcon" href="https://www.facebook.com/promatix.iot" target="_blank">
@@ -183,17 +208,17 @@
       
         <p class="socialIcon">Made with 🤍 at Promatix</p>
 
+
     </footer>
 
-<!-- scripts iconos -->
+   <!-- scripts iconos -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <!-- script bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
+
 </body>
-
-
 
 </html>
