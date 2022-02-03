@@ -1,10 +1,5 @@
 @charset "UTF-8";
-/*Esto lo hago para normalizar los margenes en los navegadores, ya que algunos le ponen por defecto un pequeño margen*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
+/* inserto imports*/
 :root {
   --width: 300px;
   --padding: 10px;
@@ -39,7 +34,7 @@ body {
       grid-template-areas: "sideMenuG   headerG" "sideMenuG   mainG   " "sideMenuG   footerG";
 }
 
-/*Aca le doy un border radius a los bordes de las cajas, solo para que se vea lindo, normalmente ustedes no le van a dar color a cada una, lo hago solo para que se vea*/
+/*Aca le doy un border radius a los bordes de las cajas, solo para que se vea lindo, */
 .mainGrid body,
 .mainGrid .header,
 .mainGrid #sideMenu,
@@ -63,11 +58,6 @@ body {
   -ms-grid-column: 2;
   grid-area: mainG;
   /*  background-color: yellow;*/
-}
-
-.mapa {
-  width: 100%;
-  height: 100%;
 }
 
 .mainGrid #sideMenu {
@@ -107,7 +97,59 @@ body {
 }
 
 /*FIN GRILLA PRINCIPAL*/
-/*SETEO DE HEADER*/
+/*SIDE MENU SETEO*/
+#sideMenu #menuItems .item {
+  padding-top: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: solid 1px gray;
+}
+
+#sideMenu #menuItems .item :hover {
+  background-color: var(--hovercolor);
+}
+
+#sideMenu #menuItems .item a {
+  display: block;
+  color: white;
+  text-align: center;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+#sideMenu #menuItems .item .icon {
+  font-size: 1.5vw;
+  overflow: hidden;
+}
+
+#sideMenu #menuItems .item .icon img {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+#sideMenu #menuItems .item .title {
+  font-size: 1.5vw;
+  overflow: hidden;
+}
+
+#sideMenu #menuItems .dropdown {
+  text-align: center;
+}
+
+/*Esto lo hago para normalizar los margenes en los navegadores, ya que algunos le ponen por defecto un pequeño margen*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* SECCION MAPA*/
+.mapa {
+  width: 100%;
+  height: 100%;
+}
+
+/*SECCION DE HEADER*/
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,58 +167,12 @@ body {
 }
 
 /*FIN HEADER*/
-/*nuevo SaSS*/
-/*SIDE MENU SETEO*/
-#sideMenu a {
-  color: white;
-  text-align: center;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-}
-
-#sideMenu #menuItems .item {
-  padding-top: 1px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-bottom: solid 1px gray;
-}
-
-#sideMenu #menuItems .dropdown {
-  text-align: center;
-}
-
-#sideMenu #menuItems .item .icon img {
-  border-radius: 50%;
-  width: 50%;
-  height: 50%;
-}
-
-#sideMenu #menuItems .item .title,
-#sideMenu #menuItems .item .icon {
-  font-size: 1.5vw;
-  overflow: hidden;
-}
-
-#sideMenu #menuItems .item a {
-  display: block;
-}
-
-#sideMenu #menuItems .item a:hover {
-  background-color: var(--hovercolor);
-}
-
-/*FIN SIDE MENU*/
 /*SETEO FOOTER*/
 .socialIcon {
   color: whitesmoke;
   text-decoration: none;
 }
 
-/*   
-    .socialIcon:hover{
-        background-color:blue;
-    }
-*/
 .socialIcon .fa {
   /*   position: relative;*/
   color: #262626;

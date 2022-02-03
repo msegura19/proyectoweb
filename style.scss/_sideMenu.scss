@@ -1,0 +1,42 @@
+/*SIDE MENU SETEO*/
+#sideMenu {
+    #menuItems {
+        .item {
+            padding-top: 1px;
+            box-sizing: border-box;
+            border-bottom: solid 1px gray;
+            :hover {
+                background-color: var(--hovercolor);
+            }
+            a {
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: solid;
+
+               
+            }
+
+            .icon {
+                font-size: 1.5vw;
+                overflow: hidden;
+
+                img {
+                    border-radius: 50%;
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+
+            .title {
+                font-size: 1.5vw;
+                overflow: hidden;
+            }
+        }
+
+        .dropdown {
+            text-align: center;
+        }
+    }
+
+}
