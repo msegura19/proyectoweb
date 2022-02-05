@@ -137,6 +137,64 @@ body {
   text-align: center;
 }
 
+.piePagina .socialIcon {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.piePagina .socialIcon .fa {
+  color: #262626;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.piePagina .socialIcon:before {
+  content: "";
+  /*   position: absolute;*/
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.piePagina .socialIcon:hover:before {
+  top: 0;
+}
+
+.piePagina .socialIcon:hover .fa-facebook {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  color: #3b5998;
+}
+
+.piePagina .socialIcon:hover .fa-instagram {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  color: #e1306c;
+}
+
+.piePagina .socialIcon:hover .fa-chrome {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  color: #C7C4B9;
+}
+
+.piePagina .socialIcon:hover .fa-whatsapp {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  color: #128c7e;
+}
+
+.piePagina .socialIcon:hover .fa-envelope {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  color: blue;
+}
+
 /*Esto lo hago para normalizar los margenes en los navegadores, ya que algunos le ponen por defecto un pequeño margen*/
 * {
   margin: 0;
@@ -167,63 +225,4 @@ body {
 }
 
 /*FIN HEADER*/
-/*SETEO FOOTER*/
-.socialIcon {
-  color: whitesmoke;
-  text-decoration: none;
-}
-
-.socialIcon .fa {
-  /*   position: relative;*/
-  color: #262626;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 3;
-}
-
-.socialIcon:before {
-  content: "";
-  /*   position: absolute;*/
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #eee;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.socialIcon:hover:before {
-  top: 0;
-}
-
-.socialIcon:hover .fa-facebook {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-  color: #3b5998;
-}
-
-.socialIcon:hover .fa-instagram {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-  color: #e1306c;
-}
-
-.socialIcon:hover .fa-chrome {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-  color: #C7C4B9;
-}
-
-.socialIcon:hover .fa-whatsapp {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-  color: #128c7e;
-}
-
-.socialIcon:hover .fa-envelope {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-  color: blue;
-}
 /*# sourceMappingURL=style.css.map */
