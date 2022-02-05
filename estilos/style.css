@@ -31,7 +31,7 @@ body {
       grid-template-rows: 5% 90% 5%;
   /*repeat(3, auto)*/
   /*Aca defino las areas del grid, piensen como si todo el contenido de mi pagina estuviera en en rectangulo de 4 filas y 3 columnas (en este caso. Ustedes podrian definir la cantidad de filas y columnas que deseen*/
-      grid-template-areas: "sideMenuG   headerG" "sideMenuG   mainG   " "sideMenuG   footerG";
+      grid-template-areas: "sideMenuG   headerG" "sideMenuG   mainG   " "footerG     footerG";
 }
 
 /*Aca le doy un border radius a los bordes de las cajas, solo para que se vea lindo, */
@@ -62,7 +62,7 @@ body {
 
 .mainGrid #sideMenu {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: sideMenuG;
   background-color: var(--bgcolormenu);
@@ -82,21 +82,26 @@ body {
 .mainGrid .piePagina {
   background-color: cornflowerblue;
   -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: footerG;
-  font-size: 1.5vw;
-  /*todo lo que sigue lo hago para centrar el texto en el contenedor*/
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* align-items: center;*/
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  /*todo lo que sigue lo hago para centrar el texto en el contenedor
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;*/
 }
 
 /*FIN GRILLA PRINCIPAL*/
+@media screen and (max-width: 768px) {
+  .mainGridD .mainGrid {
+    -ms-grid-columns: 10% 90%;
+        grid-template-columns: 10% 90%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "sideMenuG   headerG" "sideMenuG   mainG   " "footerG    footerG ";
+  }
+}
+
 /*SIDE MENU SETEO*/
 #sideMenu #menuItems .item {
   padding-top: 1px;
@@ -135,6 +140,17 @@ body {
 
 #sideMenu #menuItems .dropdown {
   text-align: center;
+}
+
+.piePagina {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.5vw;
 }
 
 .piePagina .socialIcon {
@@ -227,5 +243,9 @@ body {
 /*FIN HEADER*/
 .graf_linea {
   background-color: ghostwhite;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: solid 2px gray;
+  border-radius: 5%;
 }
 /*# sourceMappingURL=style.css.map */

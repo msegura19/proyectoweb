@@ -22,20 +22,23 @@ body {
     /* max-width: 1024px;*/
     margin: 0 auto;
     display: grid;
-   /* grid-gap: 5px;*/
+    /* grid-gap: 5px;*/
     grid-template-columns: 10% 90%;
-    grid-template-rows: 5% 90% 5%;
+    // grid-template-rows: 5% 95%;
+    grid-template-rows: 5% 90% 5%; // al sacarle est se organiza solo el grid
+    //  grid-template-rows: 1vh 9vh 1vh;
     /*repeat(3, auto)*/
 
     /*Aca defino las areas del grid, piensen como si todo el contenido de mi pagina estuviera en en rectangulo de 4 filas y 3 columnas (en este caso. Ustedes podrian definir la cantidad de filas y columnas que deseen*/
     grid-template-areas:
         "sideMenuG   headerG"
         "sideMenuG   mainG   "
-        "sideMenuG   footerG";
+        "footerG     footerG";
+    //   "sideMenuG   footerG";
 }
 
 
-/*Aca le doy un border radius a los bordes de las cajas, solo para que se vea lindo, */@at-root
+/*Aca le doy un border radius a los bordes de las cajas, solo para que se vea lindo, */
 .mainGrid body,
 .mainGrid .header,
 .mainGrid #sideMenu,
@@ -75,12 +78,26 @@ body {
 .mainGrid .piePagina {
     background-color: cornflowerblue;
     grid-area: footerG;
-    font-size: 1.5vw;
-    /*todo lo que sigue lo hago para centrar el texto en el contenedor*/
+    // font-size: 1.5vw;
+    // position: fixed;
+    // bottom: 0;       
+    // width: 100%;
+    /*todo lo que sigue lo hago para centrar el texto en el contenedor
     text-align: center;
     display: flex;
-   /* align-items: center;*/
-    justify-content: space-evenly;
+    justify-content: space-evenly;*/
 }
 
 /*FIN GRILLA PRINCIPAL*/
+.mainGridD {
+    @media screen and (max-width: 768px) {
+        .mainGrid {
+            grid-template-columns: 10% 90%;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "sideMenuG   headerG"
+                "sideMenuG   mainG   "
+                "footerG    footerG ";
+        }
+    }
+}

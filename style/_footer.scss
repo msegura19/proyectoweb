@@ -1,5 +1,9 @@
 //SETEO FOOTER
 .piePagina {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
     .socialIcon {
           color: whitesmoke;
           text-decoration: none;
@@ -50,3 +54,5 @@
           }
       }
   }
+
+ 
