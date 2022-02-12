@@ -91,6 +91,8 @@ body {
 /*FIN GRILLA PRINCIPAL,para el dashboard*/
 
 .mainGridD {
+    margin: 0 auto;
+    display: grid;
     @media screen and (max-width: 768px) {
         .mainGrid {
             grid-template-columns: 10% 90%;

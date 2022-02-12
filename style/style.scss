@@ -2,6 +2,7 @@
 @import "structGrid";
 @import "sideMenu";
 @import "footer";
+@import"slider";
 
 
 /*Esto lo hago para normalizar los margenes en los navegadores, ya que algunos le ponen por defecto un pequeño margen*/
@@ -10,20 +11,19 @@
     padding: 0;
 }
 
-/* SECCION MAPA*/ 
+/* SECCION MAPA*/
 /*agrego mixin*/
 
-@mixin frameSize ($width,$height) 
-{ width: $width;
-  height: $height;
+@mixin frameSize ($width, $height) {
+    width: $width;
+    height: $height;
 }
 
 .mapa {
-    @include frameSize(100%,100%);
-   // width: 100%;
-   // height: 100%;
+    @include frameSize(100%, 100%);
+    // width: 100%;
+    // height: 100%;
 }
-
 
 /*SECCION DE HEADER*/
 
@@ -42,17 +42,10 @@
 
 // main dash 
 
-.graf_linea{
-    background-color:ghostwhite;
+.graf_linea {
+    background-color: ghostwhite;
     box-sizing: border-box;
     border-bottom: solid 2px gray;
     border-radius: 5%;
-   
-    
 }
-
- 
-
-
-
 
