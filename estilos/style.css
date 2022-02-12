@@ -91,7 +91,7 @@ body {
     justify-content: space-evenly;*/
 }
 
-/*FIN GRILLA PRINCIPAL*/
+/*FIN GRILLA PRINCIPAL,para el dashboard*/
 @media screen and (max-width: 768px) {
   .mainGridD .mainGrid {
     -ms-grid-columns: 10% 90%;
@@ -218,6 +218,7 @@ body {
 }
 
 /* SECCION MAPA*/
+/*agrego mixin*/
 .mapa {
   width: 100%;
   height: 100%;

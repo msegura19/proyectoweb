@@ -10,11 +10,18 @@
     padding: 0;
 }
 
-/* SECCION MAPA*/
+/* SECCION MAPA*/ 
+/*agrego mixin*/
+
+@mixin frameSize ($width,$height) 
+{ width: $width;
+  height: $height;
+}
 
 .mapa {
-    width: 100%;
-    height: 100%;
+    @include frameSize(100%,100%);
+   // width: 100%;
+   // height: 100%;
 }
 
 
